@@ -34,7 +34,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo - Left */}
         <Link to="/" className="flex items-center">
-          <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-[60px] w-[60px] object-contain" />
+          <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-20 w-20 object-contain" />
         </Link>
 
         {/* Desktop Nav - Center */}

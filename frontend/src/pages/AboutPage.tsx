@@ -23,11 +23,9 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Company Overview</h2>
-            <div className="text-muted-foreground leading-relaxed space-y-4 text-lg">
-              <p>ABHYY'S FOOD LTD is a modern ethnic food startup based in Calgary, designed to serve customers who value authentic flavour without compromising on convenience, reliability, or presentation.</p>
-              <p>The business operates through a focused and controlled model that includes ready-to-eat meals, snacks, sweets, catering services, and selected packaged products. This approach allows the company to maintain strong quality control, build customer trust, and grow in a disciplined and scalable manner.</p>
-              <p>By combining traditional recipes with modern service expectations, ABHYY'S FOOD positions itself to serve both everyday household needs and event-based demand across a diverse and growing market.</p>
-            </div>
+            <p className="text-muted-foreground leading-relaxed text-lg text-center">
+              ABHYY'S FOOD LTD is a modern ethnic food startup based in Calgary, designed to serve customers who value authentic flavour without compromising on convenience, reliability, or presentation. The business operates through a focused and controlled model that includes ready-to-eat meals, snacks, sweets, catering services, and selected packaged products. This approach allows the company to maintain strong quality control, build customer trust, and grow in a disciplined and scalable manner. By combining traditional recipes with modern service expectations, ABHYY'S FOOD positions itself to serve both everyday household needs and event-based demand across a diverse and growing market.
+            </p>
           </motion.div>
         </div>
       </section>
