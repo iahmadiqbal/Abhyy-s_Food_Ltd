@@ -30,33 +30,33 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-background shadow-md">
-      <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <img src="/images/logo.jpeg" alt="ABHYY'S FOOD LTD" className="h-12 w-12 rounded-full object-cover" />
-          <span className="text-xl font-bold text-foreground">ABHYY'S FOOD</span>
+    <header className="sticky top-0 z-50 bg-background shadow-sm">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        {/* Logo - Left */}
+        <Link to="/" className="flex items-center">
+          <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-[60px] w-[60px] object-contain" />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        {/* Desktop Nav - Center */}
+        <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
           <Link to="/" className={`font-medium transition-colors hover:text-primary ${isActive("/") ? "text-primary" : "text-foreground"}`}>Home</Link>
           <Link to="/about" className={`font-medium transition-colors hover:text-primary ${isActive("/about") ? "text-primary" : "text-foreground"}`}>About</Link>
           
           {/* Services Dropdown */}
           <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-            <button className={`flex items-center gap-1 font-medium transition-colors hover:text-primary ${isActive("/services") ? "text-primary" : "text-foreground"}`}>
+            <Link to="/services" className={`flex items-center gap-1 font-medium transition-colors hover:text-primary ${isActive("/services") ? "text-primary" : "text-foreground"}`}>
               Our Services <FiChevronDown className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
-            </button>
+            </Link>
             <AnimatePresence>
               {servicesOpen && (
                 <motion.div initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }} transition={{ duration: 0.2 }}
                   className="absolute top-full left-0 mt-1 w-56 bg-background border border-border rounded-lg shadow-lg py-2">
                   {servicesDropdown.map((item) => (
-                    <Link key={item.label} to={item.path} className="block px-4 py-2 text-sm text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Link key={item.label} to={item.path} onClick={() => setServicesOpen(false)} className="block px-4 py-2 text-sm text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
                       {item.label}
                     </Link>
                   ))}
-                  <Link to="/services" className="block px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-colors border-t border-border mt-1 pt-2">
+                  <Link to="/services" onClick={() => setServicesOpen(false)} className="block px-4 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-colors border-t border-border mt-1 pt-2">
                     View All Services →
                   </Link>
                 </motion.div>
@@ -66,15 +66,15 @@ const Header = () => {
 
           {/* Who We Serve Dropdown */}
           <div className="relative" onMouseEnter={() => setServeOpen(true)} onMouseLeave={() => setServeOpen(false)}>
-            <button className={`flex items-center gap-1 font-medium transition-colors hover:text-primary ${isActive("/who-we-serve") ? "text-primary" : "text-foreground"}`}>
+            <Link to="/who-we-serve" className={`flex items-center gap-1 font-medium transition-colors hover:text-primary ${isActive("/who-we-serve") ? "text-primary" : "text-foreground"}`}>
               Who We Serve <FiChevronDown className={`transition-transform ${serveOpen ? "rotate-180" : ""}`} />
-            </button>
+            </Link>
             <AnimatePresence>
               {serveOpen && (
                 <motion.div initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -5 }} transition={{ duration: 0.2 }}
                   className="absolute top-full left-0 mt-1 w-64 bg-background border border-border rounded-lg shadow-lg py-2">
                   {serveDropdown.map((item) => (
-                    <Link key={item.label} to={item.path} className="block px-4 py-2 text-sm text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Link key={item.label} to={item.path} onClick={() => setServeOpen(false)} className="block px-4 py-2 text-sm text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
                       {item.label}
                     </Link>
                   ))}
@@ -84,8 +84,12 @@ const Header = () => {
           </div>
 
           <Link to="/food-safety" className={`font-medium transition-colors hover:text-primary ${isActive("/food-safety") ? "text-primary" : "text-foreground"}`}>Food Safety</Link>
-          <Link to="/get-a-quote" className="bg-primary text-primary-foreground px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">Get a Quote</Link>
         </nav>
+
+        {/* Get a Quote Button - Right */}
+        <Link to="/get-a-quote" className="hidden lg:block bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-medium hover:opacity-90 transition-opacity">
+          Get a Quote
+        </Link>
 
         {/* Mobile Toggle */}
         <button className="lg:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -104,7 +108,7 @@ const Header = () => {
               <Link to="/services" onClick={() => setMobileOpen(false)} className="py-2 font-medium text-foreground">Our Services</Link>
               <Link to="/who-we-serve" onClick={() => setMobileOpen(false)} className="py-2 font-medium text-foreground">Who We Serve</Link>
               <Link to="/food-safety" onClick={() => setMobileOpen(false)} className="py-2 font-medium text-foreground">Food Safety</Link>
-              <Link to="/get-a-quote" onClick={() => setMobileOpen(false)} className="bg-primary text-primary-foreground px-5 py-2 rounded-lg font-semibold text-center">Get a Quote</Link>
+              <Link to="/get-a-quote" onClick={() => setMobileOpen(false)} className="bg-primary text-primary-foreground px-5 py-2 rounded-full font-medium text-center">Get a Quote</Link>
             </div>
           </motion.nav>
         )}

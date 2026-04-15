@@ -9,8 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/images/logo.jpeg" alt="ABHYY'S FOOD LTD" className="h-10 w-10 rounded-full object-cover" />
-              <span className="text-lg font-bold">ABHYY'S FOOD</span>
+              <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-[60px] w-[60px] object-contain bg-white p-2 rounded-lg" />
             </div>
             <p className="text-sm opacity-80">Authentic ethnic food with modern convenience. Serving Calgary's diverse community with quality and trust.</p>
             <div className="flex gap-3 mt-4">
