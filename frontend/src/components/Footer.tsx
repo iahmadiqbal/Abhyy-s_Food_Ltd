@@ -3,19 +3,19 @@ import { FiFacebook, FiInstagram, FiTwitter, FiPhone, FiMail, FiMapPin } from "r
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-yellow-50 text-gray-800">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-20 w-20 object-contain bg-white p-2 rounded-lg" />
+            <div className="flex items-center gap-2 mb-4 relative z-10">
+              <img src="/images/ABHYY'S FOOD.png" alt="ABHYY'S FOOD LTD" className="h-16 w-16 object-contain scale-[2.5]" />
             </div>
             <p className="text-sm opacity-80">Authentic ethnic food with modern convenience. Serving Calgary's diverse community with quality and trust.</p>
             <div className="flex gap-3 mt-4">
-              <a href="#" className="text-secondary-foreground hover:text-primary transition-colors"><FiFacebook size={20} /></a>
-              <a href="#" className="text-secondary-foreground hover:text-primary transition-colors"><FiInstagram size={20} /></a>
-              <a href="#" className="text-secondary-foreground hover:text-primary transition-colors"><FiTwitter size={20} /></a>
+              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiFacebook size={20} /></a>
+              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiInstagram size={20} /></a>
+              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiTwitter size={20} /></a>
             </div>
           </div>
 

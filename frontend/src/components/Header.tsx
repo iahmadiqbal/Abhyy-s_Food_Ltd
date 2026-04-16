@@ -30,14 +30,14 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-background shadow-sm">
+    <header className="sticky top-0 z-50 bg-gray-50 shadow-sm">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo - Left */}
-        <Link to="/" className="flex items-center relative z-10">
+        <Link to="/" className="flex items-center relative z-10 translate-y-2">
           <img
             src="/images/ABHYY'S FOOD.png"
             alt="ABHYY'S FOOD LTD"
-            className="h-16 w-16 object-contain scale-x-[2] scale-y-[2.5]"
+            className="h-16 w-16 object-contain scale-[2.5]"
           />
         </Link>
 
@@ -174,7 +174,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden overflow-hidden bg-background border-t border-border"
+            className="lg:hidden overflow-hidden bg-gray-50 border-t border-border"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
               <Link
