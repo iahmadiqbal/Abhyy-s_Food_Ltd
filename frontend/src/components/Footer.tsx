@@ -13,9 +13,9 @@ const Footer = () => {
             </div>
             <p className="text-sm opacity-80">Authentic ethnic food with modern convenience. Serving Calgary's diverse community with quality and trust.</p>
             <div className="flex gap-3 mt-4">
-              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiFacebook size={20} /></a>
-              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiInstagram size={20} /></a>
-              <a href="#" className="text-gray-800 hover:text-primary transition-colors"><FiTwitter size={20} /></a>
+              <a href="https://www.facebook.com/profile.php?id=61570800392804" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-primary transition-colors"><FiFacebook size={20} /></a>
+              <a href="https://www.instagram.com/abhyysfood/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-primary transition-colors"><FiInstagram size={20} /></a>
+              <a href="https://www.instagram.com/abhyysfood/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-primary transition-colors"><FiTwitter size={20} /></a>
             </div>
           </div>
 
