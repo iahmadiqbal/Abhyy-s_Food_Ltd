@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-gray-50 shadow-sm">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+      <div className="container mx-auto flex items-center justify-between py-4 px-4 xl:px-6 2xl:px-8">
         {/* Logo - Left */}
         <Link to="/" className="flex items-center relative z-10 translate-y-2">
           <img
@@ -42,7 +42,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav - Center */}
-        <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8 flex-1 justify-center">
           <Link
             to="/"
             className={`font-medium transition-colors hover:text-primary ${isActive("/") ? "text-primary" : "text-foreground"}`}
@@ -152,7 +152,7 @@ const Header = () => {
         {/* Get a Quote Button - Right */}
         <Link
           to="/get-a-quote"
-          className="hidden lg:block bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-medium hover:opacity-90 transition-opacity"
+          className="hidden lg:block bg-primary text-primary-foreground px-4 xl:px-6 2xl:px-8 py-2.5 rounded-full font-medium hover:opacity-90 transition-opacity text-sm xl:text-base"
         >
           Get a Quote
         </Link>
