@@ -49,24 +49,20 @@ const Footer = () => {
             <h4 className="font-bold text-base xl:text-lg 2xl:text-xl mb-3 xl:mb-4">Contact</h4>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
-                <FiPhone className="text-primary" /> <span>+1 (403) 000-0000</span>
+                <FiPhone className="text-primary" /> <span>+1 403-836-3512</span>
               </div>
               <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
-                <FiMail className="text-primary" /> <span>info@abhyysfood.com</span>
+                <FiMail className="text-primary" /> <span>info@abhyysfoods.com</span>
               </div>
               <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
-                <FiMapPin className="text-primary" /> <span>Calgary, Alberta, Canada</span>
+                <FiMapPin className="text-primary" /> <span>8500 84 ST SE, Calgary, Alberta, Canada T3S 0A1</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-border mt-6 xl:mt-8 2xl:mt-10 pt-4 xl:pt-6 2xl:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-border mt-6 xl:mt-8 2xl:mt-10 pt-4 xl:pt-6 2xl:pt-8 text-center">
           <p className="text-xs xl:text-sm 2xl:text-base opacity-60">© {new Date().getFullYear()} ABHYY'S FOOD LTD. All rights reserved.</p>
-          <div className="flex gap-4 text-xs xl:text-sm 2xl:text-base opacity-60">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms & Conditions</a>
-          </div>
         </div>
       </div>
     </footer>

@@ -133,7 +133,7 @@ const HomePage = () => {
       >
         <div className="flex flex-wrap gap-4 justify-center">
           <button
-            onClick={() => alert("Call us at: +1 (403) 000-0000")}
+            onClick={() => alert("Call us at: +1 403-836-3512")}
             className="bg-secondary text-secondary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity"
           >
             ORDER NOW

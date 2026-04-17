@@ -24,7 +24,7 @@ const AboutPage = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Company Overview</h2>
             <p className="text-muted-foreground leading-relaxed text-lg text-center">
-              ABHYY'S FOOD LTD is a modern ethnic food startup based in Calgary, designed to serve customers who value authentic flavour without compromising on convenience, reliability, or presentation. The business operates through a focused and controlled model that includes ready-to-eat meals, snacks, sweets, catering services, and selected packaged products. This approach allows the company to maintain strong quality control, build customer trust, and grow in a disciplined and scalable manner. By combining traditional recipes with modern service expectations, ABHYY'S FOOD positions itself to serve both everyday household needs and event-based demand across a diverse and growing market.
+              ABHYY'S FOOD is a Calgary-based ethnic food company bringing authentic flavours to your table with modern convenience. We specialize in ready-to-eat meals, snacks, sweets, and catering services—all crafted with traditional recipes and quality ingredients. Our mission is simple: deliver delicious, reliable food that fits your lifestyle.
             </p>
           </motion.div>
         </div>
@@ -37,7 +37,7 @@ const AboutPage = () => {
           <div className="mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-                <img src="/images/food-prep.jpg" alt="Our Mission" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&h=600&fit=crop" alt="Our Mission" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
                 className="bg-background p-8 rounded-xl shadow-md">
@@ -63,7 +63,7 @@ const AboutPage = () => {
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
                 className="order-1 lg:order-2">
-                <img src="/images/ready-meals.jpg" alt="Our Vision" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop" alt="Our Vision" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
               </motion.div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const AboutPage = () => {
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-                <img src="/images/catering.jpg" alt="Our Objectives" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&h=600&fit=crop" alt="Our Objectives" className="rounded-xl shadow-lg w-full h-96 object-cover" loading="lazy" />
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
                 className="bg-background p-8 rounded-xl shadow-md">

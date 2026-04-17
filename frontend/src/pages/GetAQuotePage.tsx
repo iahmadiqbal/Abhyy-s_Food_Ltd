@@ -51,7 +51,7 @@ const GetAQuotePage = () => {
                   <div>
                     <label className="block text-foreground font-medium mb-2">Phone Number</label>
                     <input type="tel" required value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="+1 (403) 000-0000" />
+                      className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="+1 403-836-3512" />
                   </div>
                   <div>
                     <label className="block text-foreground font-medium mb-2">Message</label>
@@ -84,22 +84,22 @@ const GetAQuotePage = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <FiPhone className="text-primary" size={20} />
-                    <span className="text-foreground">+1 (403) 000-0000</span>
+                    <span className="text-foreground">+1 403-836-3512</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <FiMail className="text-primary" size={20} />
-                    <span className="text-foreground">info@abhyysfood.com</span>
+                    <span className="text-foreground">info@abhyysfoods.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <FiMapPin className="text-primary" size={20} />
-                    <span className="text-foreground">Calgary, Alberta, Canada</span>
+                    <span className="text-foreground">8500 84 ST SE, Calgary, Alberta, Canada T3S 0A1</span>
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:+14030000000" className="flex-1 bg-secondary text-secondary-foreground py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity">CALL NOW</a>
-                <a href="mailto:info@abhyysfood.com" className="flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity">EMAIL US</a>
+                <a href="tel:+14038363512" className="flex-1 bg-secondary text-secondary-foreground py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity cursor-pointer">CALL NOW</a>
+                <a href="mailto:info@abhyysfoods.com" className="flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity cursor-pointer">EMAIL US</a>
               </div>
             </motion.div>
           </div>
