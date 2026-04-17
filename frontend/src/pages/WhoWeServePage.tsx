@@ -3,7 +3,7 @@ import HeroBanner from "@/components/HeroBanner";
 import SectionBlock from "@/components/SectionBlock";
 
 const WhoWeServePage = () => {
-  const orderBtn = <button onClick={() => alert("Call us at: +1 403-836-3512")} className="bg-secondary text-secondary-foreground px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">ORDER NOW</button>;
+  const orderBtn = <a href="tel:+14038363512" className="bg-secondary text-secondary-foreground px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity inline-block">ORDER NOW</a>;
 
   return (
     <>

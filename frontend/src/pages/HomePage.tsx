@@ -132,12 +132,12 @@ const HomePage = () => {
         subtitle="Ready meals, catering & trusted food products for Calgary's diverse community."
       >
         <div className="flex flex-wrap gap-4 justify-center">
-          <button
-            onClick={() => alert("Call us at: +1 403-836-3512")}
-            className="bg-secondary text-secondary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity"
+          <a
+            href="tel:+14038363512"
+            className="bg-secondary text-secondary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity inline-block"
           >
             ORDER NOW
-          </button>
+          </a>
           <Link
             to="/get-a-quote"
             className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity"
