@@ -48,12 +48,12 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-base xl:text-lg 2xl:text-xl mb-3 xl:mb-4">Contact</h4>
             <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
+              <a href="tel:+14038363512" className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80 hover:text-primary hover:opacity-100 transition-colors">
                 <FiPhone className="text-primary" /> <span>+1 403-836-3512</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
+              </a>
+              <a href="mailto:info@abhyysfoods.com" className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80 hover:text-primary hover:opacity-100 transition-colors">
                 <FiMail className="text-primary" /> <span>info@abhyysfoods.com</span>
-              </div>
+              </a>
               <div className="flex items-center gap-2 text-xs xl:text-sm 2xl:text-base opacity-80">
                 <FiMapPin className="text-primary" /> <span>8500 84 ST SE, Calgary, Alberta, Canada T3S 0A1</span>
               </div>
